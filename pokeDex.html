@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <script src="./pokescript.js"></script>
+    <script src="./pokeTemplate.js"></script>
+    <link rel="stylesheet" href="poke.css">
+    <link rel="shortcut icon" href="./img/pokemon-icon.jpg" type="image/x-icon">
+</head>
+<body class="main" onload="init()">
+    <script>
+       
+    </script>
+
+    <header id="PokeHeader">
+        <div id="blue-light"></div>
+        <h1>PokeDex</h1>
+    </header>
+    <div class="balken-top"></div>
+    <div id="PokeScreen"></div>
+
+    <div id="loading-screen" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="balken-bottom"><button onclick="loadMorePokemon()">Mehr laden</button></div>
+
+    <div id="poke-details" style="display: none;">
+        <div class="close-overlay" onclick="closeOverlay()">❌</div>
+        <div id="overlay-content"></div>
+    </div>
+
+    <footer id="PokeFooter">TestFooter</footer>
+</body>
+</html>
