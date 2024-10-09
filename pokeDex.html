@@ -16,22 +16,29 @@
 
     <header id="PokeHeader">
         <div id="blue-light"></div>
+        <div class="img-upperTxt">
+        <img class="top-img" src="./img/pokemon-icon.jpg">
         <h1>PokeDex</h1>
+        </div>
+        <div>
+            <input id="search_poke_data" class="search_input"><button onclick="searchForPokemon()">Search</button>
+        </div>
     </header>
     <div class="balken-top"></div>
+
     <div id="PokeScreen"></div>
 
     <div id="loading-screen" style="display: none;">
         <div class="spinner"></div>
     </div>
 
-    <div class="balken-bottom"><button onclick="loadMorePokemon()">Mehr laden</button></div>
+    <div class="balken-bottom"><button id="more" onclick="loadMorePokemon()">Mehr laden</button></div>
 
     <div id="poke-details" style="display: none;">
-        <div class="close-overlay" onclick="closeOverlay()">❌</div>
-        <div id="overlay-content"></div>
+        <div class="close-overlay"></div>
+        <div id="overlay-content" onclick="closeOverlay()"></div>
     </div>
 
-    <footer id="PokeFooter">TestFooter</footer>
+    <footer id="PokeFooter">in Memorie of the old PokeDex </footer>
 </body>
 </html>
